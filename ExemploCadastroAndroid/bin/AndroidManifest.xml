@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="br.javamagazine.cadastro" android:versionCode="1"
+	android:versionName="1.0.0">
+	 <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:theme="@android:style/Theme.Light">
+		<activity android:name=".ListaCarros" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".ListaCarrosSimples" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".FormularioCarro" android:label="Carro" />
+		<activity android:name=".BuscarCarro" android:label="BuscarCarro" />
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest>
